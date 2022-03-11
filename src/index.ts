@@ -6,7 +6,7 @@ const getElement = (target: TTarget) => {
   return isString ? document.querySelector(target) : target;
 };
 
-export const sticky = (target: TTarget) => {
+export const stickyElement = (target: TTarget) => {
   const targetOffset = getElement(target).offsetHeight;
 
   const body = document.querySelector('body') as HTMLBodyElement;
